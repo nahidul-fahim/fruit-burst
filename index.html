@@ -20,6 +20,8 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        'color-primary': '#F85559',
+                        'color-black': '#121212',
                     }
                 }
             }
@@ -30,7 +32,11 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME INTEGRATION -->
+
+    <script src="https://kit.fontawesome.com/0a3b51aff3.js" crossorigin="anonymous"></script>
 
     <!-- VANILLA CSS STYLE FILE -->
 
@@ -38,7 +44,7 @@
         * {
             margin: 0;
             padding: 0;
-            font-family: 'Lato', sans-serif;
+            font-family: 'Inter', sans-serif;
         }
     </style>
 
@@ -46,37 +52,53 @@
 
 <body>
 
-    <header>
+    <header class="md:container mx-auto px-5 md:px-8">
 
-        <div class="navbar bg-base-100">
-            <div class="flex-1">
-                <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+
+        <!-- NAVBAR STARTS HERE -->
+
+        <nav class="flex justify-between items-center lg:bg-color-primary lg:px-8 py-4 rounded-[600px] lg:mt-7">
+
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 text-[18px] font-medium text-white">
+                    <li><a class="hover:bg-white hover:rounded-[600px] hover:text-color-primary">Home</a></li>
+                    <li><a class="hover:bg-white hover:rounded-[600px] hover:text-color-primary">About Us</a></li>
+                    <li><a class="hover:bg-white hover:rounded-[600px] hover:text-color-primary">Shop</a></li>
+                    <li><a class="hover:bg-white hover:rounded-[600px] hover:text-color-primary">All Fruits</a></li>
+                </ul>
             </div>
-            <div class="flex-none gap-2">
-                <div class="form-control">
-                    <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
-                </div>
-                <div class="dropdown dropdown-end">
-                    <label tabindex="0" class="btn btn-ghost btn-circle avatar">
-                        <div class="w-10 rounded-full">
-                            <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
-                        </div>
-                    </label>
-                    <ul tabindex="0"
-                        class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
-                        <li>
-                            <a class="justify-between">
-                                Profile
-                                <span class="badge">New</span>
-                            </a>
-                        </li>
-                        <li><a>Settings</a></li>
-                        <li><a>Logout</a></li>
-                    </ul>
-                </div>
+
+            <div class="flex gap-5 justify-center items-center">
+                <img src="./images/logo.png" alt="Logo Image">
+                <h3 class="text-3xl font-semibold text-color-black lg:text-white">Fruit Burst</h3>
             </div>
-        </div>
+
+            <div class="form-control hidden lg:inline">
+                <input type="text" placeholder="Search here" class="input input-bordered w-24 md:w-auto rounded-[600px]" />
+                <a href=""><i class="fa-solid fa-magnifying-glass -translate-x-10" style="color: #1f1f1f;"></i></a>
+            </div>
+
+            <!-- TAB & MOBILE RESPONSIVE NAV -->
+
+            <div class="dropdown dropdown-bottom dropdown-end lg:hidden">
+                <label tabindex="0" class="btn m-1"><i class="fa-solid fa-bars text-2xl" style="color: #262626;"></i></label>
+                <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 text-base font-medium">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                </ul>
+            </div>
+
+            <!-- TAB & MOBILE RESPONSIVE NAV ENDS HERE-->
+
+        </nav>
+
+        <!-- NAV BAR ENDS HERE -->
+
     </header>
+
+
 
     <main>
 

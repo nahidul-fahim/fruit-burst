@@ -272,7 +272,8 @@
                         <i class="fa-regular fa-star" style="color: #f85559;"></i>
                         <i class="fa-regular fa-star" style="color: #f85559;"></i>
                     </div>
-                    <a class="btn text-color-primary text-[18px] font-semibold " href="">Details</a>
+                    <button class="btn text-color-primary text-[18px] font-semibold"
+                        onclick="my_modal_apple.showModal()">Details</button>
                 </div>
 
                 <div class="flex flex-col justify-center items-center gap-5 py-8 px-5 rounded-lg shadow-md">
@@ -286,7 +287,6 @@
                         <i class="fa-regular fa-star" style="color: #f85559;"></i>
                         <i class="fa-regular fa-star" style="color: #f85559;"></i>
                     </div>
-                    <!-- <a class="text-color-primary text-[18px] font-semibold" href="">Details</a> -->
                     <button class="btn text-color-primary text-[18px] font-semibold"
                         onclick="my_modal_orange.showModal()">Details</button>
                 </div>
@@ -302,7 +302,8 @@
                         <i class="fa-regular fa-star" style="color: #f85559;"></i>
                         <i class="fa-regular fa-star" style="color: #f85559;"></i>
                     </div>
-                    <a class="text-color-primary text-[18px] font-semibold" href="">Details</a>
+                    <button class="btn text-color-primary text-[18px] font-semibold"
+                        onclick="my_modal_dragon.showModal()">Details</button>
                 </div>
 
                 <div class="flex flex-col justify-center items-center gap-5 py-8 px-5 rounded-lg shadow-md">
@@ -316,17 +317,48 @@
                         <i class="fa-regular fa-star" style="color: #f85559;"></i>
                         <i class="fa-regular fa-star" style="color: #f85559;"></i>
                     </div>
-                    <a class="text-color-primary text-[18px] font-semibold" href="">Details</a>
+                    <button class="btn text-color-primary text-[18px] font-semibold"
+                        onclick="my_modal_banana.showModal()">Details</button>
                 </div>
 
                 <!-- MODAL SECTION-->
+
+
+                <!--MODAL APPLE-->
+
+                <dialog id="my_modal_apple" class="modal modal-bottom sm:modal-middle">
+                    <form method="dialog" class="modal-box">
+
+                        <div class="flex flex-col justify-center items-center text-center gap-5 py-10">
+                            <img src="./images/fruit6.png" alt="Apple">
+                            <h4 class="text-xl font-bold text-color-black">Apple</h4>
+                            <p class="text-base text-color-gray font-medium">Professional employees are there for you to
+                                pick the most amazing and fresh fruits.</p>
+                            <div>
+                                <i class="fa-solid fa-star" style="color: #f85559;"></i>
+                                <i class="fa-solid fa-star-half-stroke" style="color: #f85559;"></i>
+                                <i class="fa-regular fa-star" style="color: #f85559;"></i>
+                                <i class="fa-regular fa-star" style="color: #f85559;"></i>
+                                <i class="fa-regular fa-star" style="color: #f85559;"></i>
+                            </div>
+
+                            <div class="modal-action space-x-8">
+                                <button
+                                    class="text-base font-bold text-color-primary px-4 py-3 bg-white border-2 border-color-primary rounded-lg">Close</button>
+                                <button class="text-base font-bold text-white px-4 py-3 bg-color-primary rounded-lg">Buy Now</button>
+                            </div>
+                        </div>
+                    </form>
+                </dialog>
+
+
 
                 <!--MODAL ORANGE-->
 
                 <dialog id="my_modal_orange" class="modal modal-bottom sm:modal-middle">
                     <form method="dialog" class="modal-box">
 
-                        <div class="flex">
+                        <div class="flex flex-col justify-center items-center text-center gap-5 py-10">
                             <img src="./images/fruit7.png" alt="orange">
                             <h4 class="text-xl font-bold text-color-black">Orange</h4>
                             <p class="text-base text-color-gray font-medium">Professional employees are there for you to
@@ -338,14 +370,75 @@
                                 <i class="fa-regular fa-star" style="color: #f85559;"></i>
                                 <i class="fa-regular fa-star" style="color: #f85559;"></i>
                             </div>
-                        </div>
 
-                        <div class="modal-action">
-                            <!-- if there is a button in form, it will close the modal -->
-                            <button class="btn">Close</button>
+                            <div class="modal-action space-x-8">
+                                <button
+                                    class="text-base font-bold text-color-primary px-4 py-3 bg-white border-2 border-color-primary rounded-lg">Close</button>
+                                <button class="text-base font-bold text-white px-4 py-3 bg-color-primary rounded-lg">Buy Now</button>
+                            </div>
                         </div>
                     </form>
                 </dialog>
+
+
+                <!--MODAL RED DRAGON-->
+
+                <dialog id="my_modal_dragon" class="modal modal-bottom sm:modal-middle">
+                    <form method="dialog" class="modal-box">
+
+                        <div class="flex flex-col justify-center items-center text-center gap-5 py-10">
+                            <img src="./images/fruit8.png" alt="Red Dragon">
+                            <h4 class="text-xl font-bold text-color-black">Red Dragon</h4>
+                            <p class="text-base text-color-gray font-medium">Professional employees are there for you to
+                                pick the most amazing and fresh fruits.</p>
+                            <div>
+                                <i class="fa-solid fa-star" style="color: #f85559;"></i>
+                                <i class="fa-solid fa-star-half-stroke" style="color: #f85559;"></i>
+                                <i class="fa-regular fa-star" style="color: #f85559;"></i>
+                                <i class="fa-regular fa-star" style="color: #f85559;"></i>
+                                <i class="fa-regular fa-star" style="color: #f85559;"></i>
+                            </div>
+
+                            <div class="modal-action space-x-8">
+                                <button
+                                    class="text-base font-bold text-color-primary px-4 py-3 bg-white border-2 border-color-primary rounded-lg">Close</button>
+                                <button class="text-base font-bold text-white px-4 py-3 bg-color-primary rounded-lg">Buy Now</button>
+                            </div>
+                        </div>
+                    </form>
+                </dialog>
+
+
+
+                <!--MODAL BANANA-->
+
+                <dialog id="my_modal_banana" class="modal modal-bottom sm:modal-middle">
+                    <form method="dialog" class="modal-box">
+
+                        <div class="flex flex-col justify-center items-center text-center gap-5 py-10">
+                            <img src="./images/fruit9.png" alt="Banana">
+                            <h4 class="text-xl font-bold text-color-black">Banana</h4>
+                            <p class="text-base text-color-gray font-medium">Professional employees are there for you to
+                                pick the most amazing and fresh fruits.</p>
+                            <div>
+                                <i class="fa-solid fa-star" style="color: #f85559;"></i>
+                                <i class="fa-solid fa-star-half-stroke" style="color: #f85559;"></i>
+                                <i class="fa-regular fa-star" style="color: #f85559;"></i>
+                                <i class="fa-regular fa-star" style="color: #f85559;"></i>
+                                <i class="fa-regular fa-star" style="color: #f85559;"></i>
+                            </div>
+
+                            <div class="modal-action space-x-8">
+                                <button
+                                    class="text-base font-bold text-color-primary px-4 py-3 bg-white border-2 border-color-primary rounded-lg">Close</button>
+                                <button class="text-base font-bold text-white px-4 py-3 bg-color-primary rounded-lg">Buy Now</button>
+                            </div>
+                        </div>
+                    </form>
+                </dialog>
+
+
+
 
             </div>
 
